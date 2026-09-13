@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autophagy — Say everything openly</title>
+<meta name="theme-color" content="#0000AD">
+<meta name="description" content="Autophagy — Say everything openly. Social media for feelings, stories & earning. 100+ languages.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2314b8b3'/><text x='32' y='42' font-size='34' font-weight='800' text-anchor='middle' fill='%23fff' font-family='Arial'>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Spline+Sans:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="splash">
+  <div class="sp-bg"><div class="sp-globe"></div><div class="sp-words" id="spWords"></div></div>
+  <div class="sp-in">
+    <div class="sp-mark">Autophagy<i>.</i></div>
+    <div id="spTag">Say everything openly</div>
+    <div id="spLang">ENGLISH</div>
+    <div class="sp-quick" id="spQuick"></div>
+    <button class="sp-enter" data-act="spEnter">Enter →</button>
+    <div class="sp-det" id="spDet"></div>
+  </div>
+</div>
+
+<header id="topbar"><div class="tb-in">
+  <button id="brand" data-act="brand" aria-label="Autophagy menu"><span id="logoBox"></span><span class="bname">Autophagy<em>.</em></span></button>
+  <div class="hsearch"><input id="topSearch" data-ph="search_ph2" autocomplete="off"><div class="tsres" id="tsRes"></div></div>
+  <span class="tb-sp"></span>
+  <button class="tbtn" id="btnMyProfile" data-act="nav_profile"></button>
+  <button class="tbtn" id="langBtn" data-act="langToggle"></button>
+  <button class="tbtn" id="bellBtn" data-act="bellToggle"></button>
+  <button class="tbtn" id="darkBtn" data-act="darkToggle"></button>
+  <span id="authZone" style="display:flex;gap:8px"></span>
+</div></header>
+
+<div id="adHead"></div>
+<div id="menuPanel"></div>
+<div id="notifPanel"></div>
+
+<div class="wrap">
+  <nav id="rail"></nav>
+  <main><div id="view"></div></main>
+</div>
+
+<div id="adFoot"></div>
+
+<footer><div class="ft-in">
+  <div class="ft-brand">
+    <span style="font-family:var(--serif);font-weight:620;font-size:22px">Autophagy<em style="font-style:normal;color:var(--blue)">.</em></span>
+    <p data-i18n="tagline"></p>
+    <p class="mono" style="font-size:11px;color:#A6A6BC;margin-top:12px">24 LANG + GT · TRANSLATE · REPOST · 5% COMM · SECURE · v4.1</p>
+  </div>
+  <div class="ft-col"><h5>Platform</h5>
+    <button data-act="nav_profile" data-i18n="m_profile"></button>
+    <button data-act="nav_adzone" data-i18n="az_t"></button>
+    <button data-act="nav_msgs" data-i18n="m_msgs"></button>
+    <button data-act="nav_earn" data-i18n="t_earnings"></button>
+    <button data-act="openAds" data-i18n="advertise"></button>
+  </div>
+  <div class="ft-col"><h5>Legal</h5>
+    <button data-act="doc" data-d="privacy">Privacy Policy</button>
+    <button data-act="doc" data-d="terms">Terms &amp; Conditions</button>
+    <button data-act="doc" data-d="policy">Content Policy</button>
+    <button data-act="openHelp">🆘 Help &amp; Support</button>
+    <button data-act="openAbout">🏛️ About Us</button>
+  </div>
+  <div class="ft-col"><h5>Follow &amp; Contact</h5>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5h3V5h-3a4.2 4.2 0 0 0-4.2 4.2V12H7v3.4h2.8V21h3.4v-5.6H16l.7-3.4h-3.5V9.4c0-.5.4-.9.8-.9z"/></svg></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 4.3c2.5 0 2.8 0 3.8.1 2.4.1 3.6 1.3 3.7 3.7.1 1 .1 1.3.1 3.9s0 2.9-.1 3.9c-.1 2.4-1.3 3.6-3.7 3.7-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.4-.1-3.6-1.3-3.7-3.7-.1-1-.1-1.3-.1-3.9s0-2.9.1-3.9C4.6 5.7 5.8 4.5 8.2 4.4c1-.1 1.3-.1 3.8-.1zM12 2.5c-2.6 0-2.9 0-3.9.1-3.3.2-5.3 2.1-5.5 5.5-.1 1-.1 1.3-.1 3.9s0 3 .1 4c.2 3.3 2.1 5.3 5.5 5.5 1 .1 1.3.1 3.9.1s3 0 4-.1c3.3-.2 5.3-2.1 5.5-5.5.1-1 .1-1.3.1-4s0-2.9-.1-3.9c-.2-3.3-2.1-5.3-5.5-5.5-1-.1-1.4-.1-4-.1zm0 4.6a4.9 4.9 0 1 0 0 9.8 4.9 4.9 0 0 0 0-9.8zm0 8.1a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.1-9.4a1.15 1.15 0 1 0 0 2.3 1.15 1.15 0 0 0 0-2.3z"/></svg></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.9 8.6H3.8V20h3.1V8.6zM5.3 3.5a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7zM20.2 13c0-3.1-1.7-4.6-3.9-4.6-1.8 0-2.6 1-3.1 1.7V8.6H10V20h3.2v-6.4c0-.3 0-.7.1-.9.3-.7.8-1.4 1.8-1.4 1.2 0 1.9.9 1.9 2.4V20h3.2v-7z"/></svg></a>
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6c-.3-1-1-1.8-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4c-1 .3-1.7 1-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6c.3 1 1 1.8 2 2 1.8.4 8.5.4 8.5.4s6.7 0 8.5-.4c1-.3 1.7-1 2-2 .5-1.8.5-5.6.5-5.6zM9.8 15.5v-7l6.2 3.5-6.2 3.5z"/></svg></a>
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4h4.3l4.1 5.7L17.4 4H20l-6.4 7.3L20.5 20h-4.3l-4.4-6.1L6.5 20H4l6.9-7.8L4 4z"/></svg></a>
+    </div>
+    <div class="ft-contact">
+      📧 <a href="mailto:tautophagy@gmail.com">tautophagy@gmail.com</a><br>
+      💬 WhatsApp: <a href="https://wa.me/8801671451195" target="_blank" rel="noopener">+880 1671-451195</a><br>
+      💬 <a href="https://wa.me/8801722616040" target="_blank" rel="noopener">+880 1722-616040</a>
+    </div>
+  </div>
+</div>
+<div class="ft-base">© 2026 Autophagy.com  <span data-i18n="tagline"></span> · 🌐 <span data-i18n="tr_note"></span></div></footer>
+
+<div id="mobilebar"></div>
+<a id="waFab" href="https://wa.me/8801671451195?text=Hello%20Autophagy%20WhatsApp%20Bot!" target="_blank" rel="noopener" aria-label="WhatsApp bot"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="width:19px;height:19px"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.5 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.4z"/></svg><span>WhatsApp</span><span class="wdot"></span></a>
+<button id="avoFab" data-act="avoToggle" aria-label="Avo guide"></button>
+<aside id="avo">
+  <div class="avo-h">
+    <div class="av" style="background:rgba(255,255,255,.16);width:38px;height:38px;font-size:17px">A</div>
+    <div style="flex:1"><b data-i18n="chat_t"></b><span data-i18n="chat_s"></span></div>
+    <button data-act="avoClose" style="color:#fff"></button>
+  </div>
+  <div id="avoLog"></div>
+  <div id="avoChips"></div>
+  <form id="avoForm"><input id="avoIn" data-ph="chat_ph" autocomplete="off"><button class="c-send" type="submit" aria-label="send"></button></form>
+</aside>
+<div id="toasts"></div>
+<div id="modal"><div class="ovl" data-act="closeModal"></div><div class="mcard" id="mcard"></div></div>
+<div id="gtHost" style="display:none"><div id="google_translate_element"></div></div>
+<input type="file" id="fin" class="hidden">
+<script src="js/test.js"></script>
+</body>
+</html>
